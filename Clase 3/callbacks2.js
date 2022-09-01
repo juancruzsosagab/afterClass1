@@ -23,4 +23,4 @@ const solicitudServidorUsuarios = (usuario, callback)=>{
   //Quiero solicitar al servidor todos los usuarios registrados
 
   solicitudServidorUsuarios("admin", callback)
-  //solicitudServidorUsuarios("usuario comun", callback)
+  //solicitudServidorUsuarios("usuario general", callback)

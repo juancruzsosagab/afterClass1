@@ -26,6 +26,7 @@ class User {
         for (const tweets of this.tweets) {
             tweetsText.push(tweets.text)
         }
+        
         return tweetsText
     }
 }

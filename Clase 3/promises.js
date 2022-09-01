@@ -1,15 +1,27 @@
-const task = new Promise((resolve,reject)=>{
-    resolve(true)
+const task = new Promise((resolve, reject) => {
+    resolve("Fui resuelta")
 })
 
-task.then(result =>{
-    console.log(result)
+task
+    .then(result => {
+        console.log(result)
+        console.log("Soy la tarea 1, entre al .then")
+    })
+    .catch((result) => {
+        console.log(result)
+        console.log("Soy la tarea 1, entre al .catch")
+    })
+
+const task2 = new Promise((resolve, reject) => {
+    reject("No fui resulta correctamente")
 })
 
-const task2 = new Promise((resolve,reject)=>{
-    reject(false)
-})
-
-task2.then(result =>{
-    console.log(result)
-}).catch(result=>console.log(result))
+task2
+    .then(result => {
+        console.log(result)
+        console.log("Soy la tarea 2, entre al .then")
+    })
+    .catch((result) => {
+        console.log(result)
+        console.log("Soy la tarea 2, entre al .catch")
+    }) 
